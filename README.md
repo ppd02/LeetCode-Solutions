@@ -28,11 +28,10 @@ This repository contains my solutions to **LeetCode problems** implemented in **
 ## 📁 Repository Structure
 LeetCode---Java-Solutions
 │
-├── 1-Two-Sum
-├── 2-Add-Two-Numbers
-├── 3-Longest-Substring
-├── ...
-└── README.md
+|- 1. Two Sum
+|- 2. Add Two Numbers
+|- ...
+|- README.md
 
 
 Each folder contains:
