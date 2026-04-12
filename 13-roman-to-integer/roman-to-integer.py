@@ -1,15 +1,13 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
-        res = 0
-        roman = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
-
+        final = 0
+        roman = {"I":1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000}
+        
         for i in range(len(s)):
-            cur = roman[s[i]]
-            next_val = roman[s[i+1]] if i+1 < len(s) else 0
-
-            if cur < next_val:
-                res -= cur
+            if i < len(s)-1 and roman[s[i]] < roman[s[i+1]]:
+                final -= roman[s[i]]
             else:
-                res += cur
+                final += roman[s[i]]
 
-        return res
+        # print(final)
+        return final
